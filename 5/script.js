@@ -45,30 +45,30 @@
 //     newSpeed : 190,
 //     newValue: 2019,
 //
-//
-//
-//
-// }
-//  function MaxSpeed(){
+//     MaxSpeed:function (){
 //     car.speed = car.newSpeed
-// }
-// function changeYear(){
+// },
+//     changeYear:function (){
 //     car.age = car.newValue
-// }
-//  function addDriver(){
+// },
+//     addDriver:function (){
 //     car.driver={name:'Ivan' , age:23 }
-//  }
-// function info(){
+// },
+//     info:function (){
 //     console.log(car)
-// }
-// function drive(){
+// },
+//     drive:function (){
 //     console.log(`Їдемо зі швидкістю ${car.speed}`)
 // }
-// MaxSpeed()
-// changeYear()
-// addDriver()
-// drive()
-// info()
+//
+//
+//
+// }
+// car.MaxSpeed()
+// car.changeYear()
+// car.addDriver()
+// car.drive()
+// car.info()
 
 
 //4
@@ -87,14 +87,14 @@
 //     this.info = function () {
 //         console.log(this);
 //     }
-//     this.newValueF = function (){
-//         this.age = this.newValue;
+//     this.newValue = function (Value){
+//         this.age = Value;
 //     }
-//     this.newSpeedF = function (){
-//         this.speed = this.newSpeed;
+//     this.newSpeed = function (Speed){
+//         this.speed = Speed;
 //     }
-//     this.driverF = function (){
-//         this.driver = {name:'Ivan' , age:23 };
+//     this.driver = function (N , A){
+//         this.driver = {name:N , age:A };
 //     }
 //
 // }
@@ -102,13 +102,13 @@
 // console.log(car);
 // car.drive();
 //
-// car.newValueF()
-// car.newSpeedF()
-// car.driverF()
+// car.newValue(2019)
+// car.newSpeed(200)
+// car.driver( 'Ivan' ,23)
 // car.info()
 //5
 // class Class {
-//     constructor(model, producer, age , speed,  engine , newSpeed , newValue) {
+//     constructor(model, producer, age , speed,  engine ) {
 //         this.model = model;
 //         this.producer = producer;
 //         this.age = age;
@@ -122,24 +122,25 @@
 //     drive(){
 //         console.log(`Їдемо зі швидкістю ${this.speed}`);
 //     }
-//     newValueF  (){
-//         this.age = this.newValue;
+//     newValue  (Value){
+//         this.age = Value;
 //     }
-//     newSpeedF  (){
-//         this.speed = this.newSpeed;
+//     newSpeed  (Speed){
+//         this.speed = Speed;
 //     }
-//     driverF (){
-//         this.driver = {name:'Ivan' , age:23 };
+//     driver(N , A){
+//         this.driver = {name: N, age:A };
 //     }
 // }
-// let car = new Class('Lada Kalina' , 'MAЗ' ,2017 , 187, '90sm^3' , 190 , 2019);
+// let car = new Class('Lada Kalina' , 'MAЗ' ,2017 , 187, '90sm^3');
 // console.log(car);
 // car.drive();
 //
-// car.newValueF()
-// car.newSpeedF()
-// car.driverF()
+// car.newValue(2019)
+// car.newSpeed(200)
+// car.driver('Ivan' ,23)
 // car.info()
+
 // 6
 // class Cinderella{
 //     constructor(name , age ,size) {
@@ -169,33 +170,34 @@
 // }
 
 //7
-function Cinderella(name , age ,size){
+// function Cinderella(name , age ,size){
+//
+//     this.name=name;
+//     this.age=age;
+//     this.size=size;
+//
+// }
+// let Elizaveta = new Cinderella('Elizaveta',28 ,39);
+// let Ira = new Cinderella('Ira',24 ,40);
+// let Miroslava = new Cinderella('Miroslava',17 ,38);
+// let Bronislava = new Cinderella('Bronislava',21 ,43);
+// let Lyudmila = new Cinderella('Lyudmila',19 ,39);
+// let Elvina = new Cinderella('Elvina',27 ,36);
+// let lyubov = new Cinderella('lyubov',18 ,37);
+// let Marya = new Cinderella('Marya',30 ,40);
+// let Olga = new Cinderella('Olga',23 ,41);
+// let Angela = new Cinderella('Angela',18 ,37);
+// let princess =[Elizaveta,Ira,Miroslava,Bronislava,Lyudmila,Elvina,lyubov,Marya,Olga,Angela];
+// let prince ={name:'Ioan',age:17,HaveSize:38};
+// function FindingThePrincess() {
+//     for (let i = 0; i < princess.length; i++) {
+//         const princessElement = princess[i];
+//         if (prince.HaveSize === princessElement.size){
+//             console.log(`Happy marriage princess ${princessElement.name} and prince ${prince.name} . And they lived happily ever after`)
+//         }
+//
+//     }
+// }
+// FindingThePrincess()
 
-    this.name=name;
-    this.age=age;
-    this.size=size;
-
-}
-let Elizaveta = new Cinderella('Elizaveta',28 ,39);
-let Ira = new Cinderella('Ira',24 ,40);
-let Miroslava = new Cinderella('Miroslava',17 ,38);
-let Bronislava = new Cinderella('Bronislava',21 ,43);
-let Lyudmila = new Cinderella('Lyudmila',19 ,39);
-let Elvina = new Cinderella('Elvina',27 ,36);
-let lyubov = new Cinderella('lyubov',18 ,37);
-let Marya = new Cinderella('Marya',30 ,40);
-let Olga = new Cinderella('Olga',23 ,41);
-let Angela = new Cinderella('Angela',18 ,37);
-let princess =[Elizaveta,Ira,Miroslava,Bronislava,Lyudmila,Elvina,lyubov,Marya,Olga,Angela];
-let prince ={name:'Ioan',age:17,HaveSize:38};
-function FindingThePrincess() {
-    for (let i = 0; i < princess.length; i++) {
-        const princessElement = princess[i];
-        if (prince.HaveSize === princessElement.size){
-            console.log(`Happy marriage princess ${princessElement.name} and prince ${prince.name} . And they lived happily ever after`)
-        }
-
-    }
-}
-FindingThePrincess()
 
