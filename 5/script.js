@@ -176,40 +176,41 @@
 //
 // }
 
-//7
-// function Cinderella(name , age ,size){
-//
-//     this.name=name;
-//     this.age=age;
-//     this.size=size;
-// }
-// function prince(name , age ,HaveSize){
-//
-//     this.name=name;
-//     this.age=age;
-//     this.HaveSize=HaveSize;
-// }
-// let Elizaveta = new Cinderella('Elizaveta',28 ,39);
-// let Ira = new Cinderella('Ira',24 ,40);
-// let Miroslava = new Cinderella('Miroslava',17 ,38);
-// let Bronislava = new Cinderella('Bronislava',21 ,43);
-// let Lyudmila = new Cinderella('Lyudmila',19 ,39);
-// let Elvina = new Cinderella('Elvina',27 ,36);
-// let lyubov = new Cinderella('lyubov',18 ,37);
-// let Marya = new Cinderella('Marya',30 ,40);
-// let Olga = new Cinderella('Olga',23 ,41);
-// let Angela = new Cinderella('Angela',18 ,37);
-// let princess =[Elizaveta,Ira,Miroslava,Bronislava,Lyudmila,Elvina,lyubov,Marya,Olga,Angela];
-// let Ioan = new prince ('Ioan',17 ,38);
-// function FindingThePrincess() {
-//     for (let i = 0; i < princess.length; i++) {
-//         const princessElement = princess[i];
-//         if (Ioan.HaveSize === princessElement.size){
-//             console.log(`Happy marriage princess ${princessElement.name} and prince ${Ioan.name} . And they lived happily ever after`)
-//         }
-//
-//     }
-// }
+7
+function Cinderella(name , age ,size){
+
+    this.name=name;
+    this.age=age;
+    this.size=size;
+    console.log(this);
+}
+function prince(name , age ,HaveSize){
+
+    this.name=name;
+    this.age=age;
+    this.HaveSize=HaveSize;
+}
+let Elizaveta = new Cinderella('Elizaveta',28 ,39);
+let Ira = new Cinderella('Ira',24 ,40);
+let Miroslava = new Cinderella('Miroslava',17 ,38);
+let Bronislava = new Cinderella('Bronislava',21 ,43);
+let Lyudmila = new Cinderella('Lyudmila',19 ,39);
+let Elvina = new Cinderella('Elvina',27 ,36);
+let lyubov = new Cinderella('lyubov',18 ,37);
+let Marya = new Cinderella('Marya',30 ,40);
+let Olga = new Cinderella('Olga',23 ,41);
+let Angela = new Cinderella('Angela',18 ,37);
+let princess =[Elizaveta,Ira,Miroslava,Bronislava,Lyudmila,Elvina,lyubov,Marya,Olga,Angela];
+let Ioan = new prince ('Ioan',17 ,38);
+function FindingThePrincess() {
+    for (let i = 0; i < princess.length; i++) {
+        const princessElement = princess[i];
+        if (Ioan.HaveSize === princessElement.size){
+            console.log(`Happy marriage princess ${princessElement.name} and prince ${Ioan.name} . And they lived happily ever after`)
+        }
+
+    }
+}
 // FindingThePrincess()
 
 

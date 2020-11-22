@@ -295,3 +295,15 @@ let usersWithAddress = [{id: 1, name: 'vasya', age: 31, status: false, address: 
 //     }
 // })
 // console.log(filter);
+
+// let arr =[6,48,8,74,852,63,2,5,56,853,2,56,984]
+// let reduce =arr.reduce((acc,value) =>{
+//     if(acc>value){
+//         return acc
+//
+//     }
+//     console.log(acc);
+//
+//     return  value
+// })
+// console.log(reduce);
