@@ -645,8 +645,6 @@ function goToHome(money,distance){
         },randomTime)
     })
 }
-
-
 let result =async function (){
     let a = await getup('Anton')
     console.log(a);
